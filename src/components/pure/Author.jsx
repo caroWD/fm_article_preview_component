@@ -5,11 +5,12 @@ import ShareBox from './ShareBox';
 import { AnimatePresence } from 'motion/react';
 import { motion } from 'motion/react';
 import ShareFloating from './ShareFloating';
+import avatar from '../../assets/avatar-michelle.jpg'
 
 
 const Author = ({ author, date, share }) => {
 
-  const { firstName, lastName, avatar } = author;
+  const { firstName, lastName } = author;
   const { day, month, year } = date;
   const { facebook, twitter, pinterest } = share;
 
