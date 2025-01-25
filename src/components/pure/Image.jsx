@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import image from '../../assets/drawers.jpg'
 
 
-const Image = ({ src, alt, width, height }) => {
+const Image = ({ alt, width, height }) => {
   return (
     <figure
       className='sm:overflow-hidden sm:rounded-s-xl'
     >
       <img 
-        src={src}
+        src={image}
         alt={alt}
         width={width}
         height={height}
@@ -19,7 +20,6 @@ const Image = ({ src, alt, width, height }) => {
 
 
 Image.propTypes = {
-  src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
